@@ -1,0 +1,214 @@
+
+@import url('../css/fonts.css');
+
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+}
+/*-----Global classes----- */
+a{
+    text-decoration: none;
+}
+.btn{
+    border: none;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    background: var(--sky);
+}
+
+/*-----Global classes----- */
+/* -------Navbar------ */
+.nav{
+    background-color: var(--white);
+}
+.nav .nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.nav .nav-container .brand{
+    padding: 0 16px;
+}
+.nav .nav-container .brand a{
+    color: var(--text-gray);
+    font-size: 1.5rem;
+    font-family: var(--Lexend);
+    
+}
+.link a{
+     color: var(--sky);
+     padding: 20px;
+    font-size: 1rem;
+    font-family: var(--Josefin);
+}
+.link a:hover{
+     color:var(--white);
+     background-color: var(--midnight);
+ }
+ .social{
+    padding:20px;
+}
+.social .fab{
+    padding: 0 2px;
+    color: var(--text-gray);
+}
+.social .fab:hover{
+    color: var(--sky);
+}
+
+
+/* ---@---------Navbar---@-------- */
+/*---------------- main site------------------ */
+/*---- site-background----- */
+.site-background{
+    background-image: url(../assets/Background-image.png);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.site-title{
+    padding: 10rem 0;
+    text-align: center;
+    color: var(--white);
+    
+}
+.btn-site{
+    padding: 1rem 2rem;
+    margin: 1.2rem;
+}
+.btn-site:hover{
+    background: transparent;
+    color: var(--white);;
+    border: 1px solid var(--white) ;
+}
+/*---@- site-background----@- */
+
+/*---------- blog --------- */
+.blog{
+    background-image: url(../assets/Abract01.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.blog .blog-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.blog-item{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.blog-title{
+    text-align: center;
+    width: 80%;
+}
+.btn-blog{
+    padding: 0.9rem 2rem;
+    margin: 1.2rem;
+}
+.blog-title span{
+    display: block;
+}
+/*--------@-- blog -----@---- */
+/*----@------ main site-----@---- */
+
+/* ---------Footer---------- */
+.footer{
+    background-color: var(--bg-color);
+}
+.foot-container{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+
+}
+.foot-container >div{
+    width: 25%;
+    padding: 3rem 0;
+}
+.foot-container h2{
+    font-family: var(--Josefin);
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.foot-container p{
+color: var(--text-gray);
+font-size: 1.1rem;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+
+}
+input{
+    background-color: var(--bg-color);
+    padding: .5rem .7rem;
+    border: 1px solid var(--white);
+    background: transparent;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+ .foot-btn{
+    border: 1px solid lightblue;
+    border-radius: 2rem;
+    padding: 5px 15px;
+    margin: 10px;
+    background-color: var(--sky);
+    color: white;
+    cursor: pointer;
+}
+.instagram img{
+    display: block;
+    width: 25%;
+    margin: .3rem .4rem;
+}
+.follow-us .fab{
+    color: var(--white);
+    padding: 0 2px;
+}
+.rights{
+    color: var(--text-gray);
+    text-align: center;
+    padding: 5px;
+}
+.rights h4{
+    display: inline;
+}
+.rights h4 span{
+    
+    color: var(--white);
+}
+
+
+/* ---@------Footer-----@----- */
